@@ -20,16 +20,25 @@ function agregar(producto,precio){
     console.log(producto,precio)
     productos.push(producto);
     total = total + precio;
-    document.getElementById("checkaut").innerHTML = "Pagar $${total}"
+    document.getElementById("checkaut").innerHTML =  `Pagar $${total}`
 }
 agregar(productos,precio);
 
-//llamo a esta funcion para pagar el total
+//se agrega un evento
 
+let pagar=
+document.getElementById("checkaut")
+pagar.addEventListener("click", respuestacliente)
+function respuestacliente(){
+    console.log("el cliente hizo el pago")
+};
+respuestacliente();
 
-function pagar(){
+//llamo a la funcion para pagar el total
+
+function pagaCliente(){
     console.log(productos,precio)
 window.alert(productos.join(" ,\n " + " \n Total ") + " "+ total);
 }
-pagar();
+pagaCliente();
 
