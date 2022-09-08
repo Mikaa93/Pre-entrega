@@ -42,3 +42,18 @@ window.alert(productos.join(" ,\n " + " \n Total ") + " "+ total);
 }
 pagaCliente();
 
+
+const producto = [{id: 1, producto: "Carolina Herrera", precio:5000},
+                  {id:2, producto:"Armani", precio: 10000},
+                  {id:3, producto: "Chanel", precio: 10000},
+                  {id:4, producto: "Acqua Di Gio", precio:12000},
+                  {id:5, producto:"Versace",precio:8000}];
+
+const guardarLocal = (listadeproductos,perfumes) => {localStorage.setItem(listadeproductos,perfumes)};
+
+
+guardarLocal("listasproductos",JSON.stringify(producto));
+
+
+
+
