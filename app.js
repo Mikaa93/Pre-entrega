@@ -1,9 +1,7 @@
 //llamo a la funcion para dar bienvenida a la pagina
 
 function solicitarNombre(){
-    let nombre = prompt("Ingresar nombre")
-    alert("Bienvenido a Perfume shop " + nombre)
-
+    swal("Bienvenido a Perfume Shop ");
 }
 solicitarNombre();
 
@@ -38,9 +36,11 @@ respuestacliente();
 
 function pagaCliente(){
     console.log(productos,precio)
-window.alert(productos.join(" ,\n " + " \n Total ") + " "+ total);
+/*window.alert(productos.join(" ,\n " + " \n Total ") + " "+ total);*/
 }
 pagaCliente();
+
+//guardo el localstorage y  un envio un spread del array
 
 
 const producto = [{id: 1, producto: "Carolina Herrera", precio:5000},
@@ -54,6 +54,4 @@ const guardarLocal = (listadeproductos,perfumes) => {localStorage.setItem(listad
 
 guardarLocal("listasproductos",JSON.stringify(producto));
 
-
-
-
+console.log(...producto)
