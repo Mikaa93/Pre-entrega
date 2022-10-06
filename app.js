@@ -1,4 +1,4 @@
-//llamo a la funcion para dar bienvenida a la pagina
+//llamo a la funcion para dar bienvenida a la pagina y sweet alert para dar bienvenida
 
 function solicitarNombre(){
     swal("Bienvenido a Perfume Shop ");
@@ -11,7 +11,7 @@ let productos =[ ];
 let total = 0;
 let precio= 0;
 
-//esta sirve para agregar los producto al carrito
+//esta funcion sirve para agregar los producto al carrito
 
 
 function agregar(producto,precio){
@@ -22,7 +22,7 @@ function agregar(producto,precio){
 }
 agregar(productos,precio);
 
-//se agrega un evento
+//se agrega un evento y sweet alert para aceptar o cancelar pago
 
 let pagar = document.getElementById("checkaut")
 pagar.addEventListener("click",respuestacliente)
@@ -75,6 +75,8 @@ const guardarLocal = (listadeproductos,perfumes) => {localStorage.setItem(listad
 guardarLocal("listasproductos",JSON.stringify(producto));
 
 console.log(...producto)
+
+//agrego fetch
 
 
 

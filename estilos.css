@@ -1,0 +1,80 @@
+body {
+    margin: 0px;
+    background-color: rgb(166, 182, 196);
+    font-family: 'Nerko One', cursive;
+}
+
+button {
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.navegacion {
+    background-color: #a17c93;
+    border: 1px solid black;
+    position: relative;
+}
+
+.navegacion h1 {
+    margin: 20px;
+}
+
+.button-checkout {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA; /* Blue */
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.button-checkout:hover {
+    background-color: #008CBA; /* Blue */
+    color: white;
+}
+
+.contenedor-de-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contenedor-de-productos {
+    margin: 15px;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    background-color: rgb(193, 121, 191);
+}
+
+.contenedor-de-productos:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.contenedor-de-productos img {
+    width: 300px;
+}
+
+.contenedor-de-productos h1 {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.button-Agregar {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+  
+.button-Agregar:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
